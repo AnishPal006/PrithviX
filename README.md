@@ -284,10 +284,3 @@ The current implementation focuses on **20 landslide-prone districts** across:
 
 ---
 
-# 📄 License
-
-This project is developed as part of the **Smart India Hackathon (SIH)**.
-
----
-
-## ⭐ If you find this project useful, consider giving it a star!
