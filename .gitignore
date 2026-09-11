@@ -1,0 +1,27 @@
+# Next.js
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+
+# Environment variables
+frontend/.env
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+
+# Python
+.venv/
+.venv-1/
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Temporary local backend
+backend/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
