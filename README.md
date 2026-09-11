@@ -269,6 +269,3 @@ The current implementation focuses on **20 landslide-prone districts** across:
 - Offline Emergency Mode
 
 --
----
-
-## ⭐ If you find this project useful, consider giving it a star!
