@@ -141,10 +141,10 @@ export default function ReportsPage() {
                   <span className="font-semibold text-red-400">
                     critical landslide risk
                   </span>{" "}
-                  for the selected location. Multiple environmental
-                  indicators, including rainfall, terrain slope, historical
-                  events, vegetation and soil conditions, are contributing to
-                  the elevated risk.
+                  for the selected location. Multiple environmental indicators,
+                  including rainfall, terrain slope, historical events,
+                  vegetation and soil conditions, are contributing to the
+                  elevated risk.
                 </p>
               </div>
             </div>
@@ -205,10 +205,7 @@ export default function ReportsPage() {
                     <div
                       className="h-full rounded-full bg-red-500"
                       style={{
-                        width: `${Math.min(
-                          factor.contribution * 3,
-                          100
-                        )}%`,
+                        width: `${Math.min(factor.contribution * 3, 100)}%`,
                       }}
                     />
                   </div>
@@ -271,10 +268,7 @@ export default function ReportsPage() {
                 value={risk.impact.population.toLocaleString()}
               />
 
-              <Impact
-                label="Roads"
-                value={risk.impact.roads.toString()}
-              />
+              <Impact label="Roads" value={risk.impact.roads.toString()} />
 
               <Impact
                 label="Villages"
@@ -286,10 +280,7 @@ export default function ReportsPage() {
                 value={risk.impact.hospitals.toString()}
               />
 
-              <Impact
-                label="Schools"
-                value={risk.impact.schools.toString()}
-              />
+              <Impact label="Schools" value={risk.impact.schools.toString()} />
             </div>
           </div>
 
@@ -385,22 +376,14 @@ function Metric({
         {label}
       </div>
 
-      <div className="mt-2 font-mono text-xl font-bold text-white">
-        {value}
-      </div>
+      <div className="mt-2 font-mono text-xl font-bold text-white">{value}</div>
 
       <div className="mt-1 text-[10px] text-slate-600">{detail}</div>
     </div>
   );
 }
 
-function Impact({
-  label,
-  value,
-}: {
-  label: string;
-  value: string;
-}) {
+function Impact({ label, value }: { label: string; value: string }) {
   return (
     <div className="rounded-xl border border-white/5 bg-white/[0.02] p-4">
       <div className="text-[9px] uppercase tracking-wider text-slate-600">

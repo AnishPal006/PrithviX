@@ -6,21 +6,20 @@ import RiskJourney from "@/components/forecast/RiskJourney";
 
 export default function ForecastPage() {
   return (
-    <main className="min-h-screen bg-[#03070b] text-white">
+    <main className="flex min-h-screen bg-[#03070b] text-white overflow-hidden">
       <Sidebar />
 
-      <div className="pl-72">
+      {/* Removed lg:pl-72 here */}
+      <div className="flex-1 w-full flex flex-col">
         <TopBar />
 
-        <div className="p-8">
+        <div className="p-8 flex-1 overflow-y-auto">
           <div className="mb-8">
             <div className="mb-2 text-xs font-semibold uppercase tracking-[0.3em] text-cyan-400">
               Predictive Intelligence
             </div>
 
-            <h1 className="text-3xl font-bold">
-              Landslide Risk Forecast
-            </h1>
+            <h1 className="text-3xl font-bold">Landslide Risk Forecast</h1>
 
             <p className="mt-2 text-sm text-slate-400">
               AI-generated risk trajectory for the next 72 hours.
